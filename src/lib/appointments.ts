@@ -1,0 +1,20 @@
+export const appointmentTypes = [
+  {
+    id: "online",
+    title: "Online Legal Consultation",
+    description: "Video consultation",
+    duration: "1 hour",
+    calLink: "rsb-legal-associates-and-consultants/1 hour-meeting",
+    url: "https://cal.com/rsb-legal-associates-and-consultants/1-hour-meeting",
+  },
+  {
+    id: "in-person",
+    title: "In-Person Legal Consultation",
+    description: "Physical consultation at the firm's Mumbai office",
+    duration: "1 hour",
+    calLink: "rsb-legal-associates-and-consultants/1 hour-meeting",
+    url: "https://cal.com/rsb-legal-associates-and-consultants/1-hour-meeting",
+  },
+] as const;
+
+export type AppointmentType = (typeof appointmentTypes)[number];
